@@ -1,4 +1,4 @@
-function mostrar()
+/*function mostrar()
 {
 
 	var contador=0;
@@ -31,3 +31,32 @@ function mostrar()
 	document.getElementById("maximo").value = maximo;
 
 }//FIN DE LA FUNCIÓN
+*/
+function mostrar()
+{
+	var seguir = "s";
+	var numero;
+	var min = 0;
+	var max = 0;
+	var flag = 0;
+
+
+	do{		
+		numero = parseInt(prompt ("ingrese un numero"));
+			if (numero > maximo || flag == 0){
+				max = numero;
+			}
+			if (numero < minimo || flag == 0){
+				min = numero;
+
+				flag = 1;
+			}
+			seguir = prompt ("quiere ingresar otro numero ? ");
+	}	
+		while (seguir == "s"){
+			document.getElementById("maximo").value = max;
+
+			document.getElementById("minimo").value = min;
+
+		}
+}		

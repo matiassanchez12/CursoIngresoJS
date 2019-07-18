@@ -1,27 +1,24 @@
 function mostrar()
 {
+	var numero;
+	var acumulador = 0 ;
+	var contador = 0;
+	var seguir = "s"; 
 
-	var contador=0;
-	var acumulador=0;
-	var respuesta='si';
-	
-	do {
+	while (seguir == "s"){
+
+		numero = parseInt (prompt("Ingrese un numero: "));
+
+		while (isNaN(numero)){
+			alert ("eso no es un numero");
+			numero = parseInt(prompt ("ingrese un numero: "));
+		}
+		acumulador = acumulador + numero;
 		
-	}
-	while(respuesta != 'no')
-	{
-		if(!confirm("Desea seguir escribiendo numeros?"))
-		{
-			respuesta = 'no';
-		}
-		else
-		{
-		acumulador = acumulador + parseInt(prompt('Escriba un numero'));
-		contador++;
-		}
-	}
+		contador = contador + 1;
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
-
-}//FIN DE LA FUNCIÓN
+		seguir = prompt ("quiere ingresar otro numero: responda con S o N");
+	}
+	document.getElementById("suma").value = acumulador;
+	document.getElementById("promedio").value = acumulador / contador; 
+}
