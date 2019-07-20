@@ -12,4 +12,17 @@ function mostrar()
 	
 	document.getElementById("Numero").value = numero;
 	
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/
+{
+	var num;
+
+	
+		num = prompt ("ingrese un numero entre 0 y 9: ");
+		
+		while (isNaN(num) || (num<0 || num>10)){
+			num = prompt ("ingresar denuevo ?");
+
+	}
+
+
+}

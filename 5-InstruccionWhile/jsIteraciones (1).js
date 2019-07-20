@@ -1,5 +1,5 @@
 function mostrar()
-{
+/*{
 	var cont;
 
 	cont = 0;
@@ -11,4 +11,14 @@ function mostrar()
 		alert (cont);
 	}
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/
+
+{
+ var cont = 0;
+
+ while (cont < 10){
+
+	 cont = cont + 1;
+	 alert (cont); 
+	 }
+}
