@@ -1,7 +1,5 @@
 function mostrar()
 {
-// se puede hacer de diversas formas
-//concepto de bandera sirve para saber si se pasar por un comando o no.
 
 	var contador=0;
 	var positivo=0;

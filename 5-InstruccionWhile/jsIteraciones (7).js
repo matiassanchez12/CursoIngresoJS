@@ -1,24 +1,44 @@
-function mostrar()
-{
+function mostrar() 
+/*{
+	var acumulador;
+	var respuesta;
 	var numero;
-	var acumulador = 0 ;
-	var contador = 0;
-	var seguir = "s"; 
 
-	while (seguir == "s"){
+	respuesta = prompt("Desea introducir un numero? responda con s/n.");
 
-		numero = parseInt (prompt("Ingrese un numero: "));
+	while (respuesta == "s") 
+	{
+		numero = parseInt(prompt("introduzca un numero"));
 
-		while (isNaN(numero)){
-			alert ("eso no es un numero");
-			numero = parseInt(prompt ("ingrese un numero: "));
-		}
 		acumulador = acumulador + numero;
-		
+
+		respuesta = prompt("desea introducir otro numero? nuevamente: presione s para si o n para no");
+	}
+
+	 document.getElementById("suma") = acumulador 
+}
+
+*/
+{				
+	var num;
+	var contador = 0;
+	var acumulador = 0;
+	var promedio;
+	var respuesta;
+	
+	respuesta = prompt ("desea ingresar un numero?")
+	while (respuesta == "s"){
+
+		num = parseInt(prompt("Ingrese un numero: "));
+
 		contador = contador + 1;
 
-		seguir = prompt ("quiere ingresar otro numero: responda con S o N");
+		acumulador = acumulador + num;
+
+		respuesta = prompt ("desea escribir otro numero? escriba s/n: ");
+
 	}
+
 	document.getElementById("suma").value = acumulador;
-	document.getElementById("promedio").value = acumulador / contador; 
-}
+	document.getElementById("promedio").value = acumulador / contador;
+}	
