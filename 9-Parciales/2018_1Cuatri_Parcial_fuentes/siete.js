@@ -20,8 +20,8 @@ function mostrar()
 
         sexo = prompt ("Ingrese el sexo: ");
 
-        while (!(sexo == "f" || sexo == "m")){
-            sexo = prompt ("Error. Ingrese denuevo el sexo: ");
+        while ((sexo != 'f' && sexo != 'm')){
+            sexo = prompt ("Error. Ingrese denuevo el sexo: ")();
         
         }
         if (nota < notaBaja || flag == 0){
@@ -35,9 +35,8 @@ function mostrar()
             notaAlta ++;
         }
     }
-        prom = acum / 5;
+        promNotas = acum / 5;
 
-        alert ("El promedio de notas es : " + prom);
-        alert ("La nota mas baja es y el sexo es : " + notaBaja + " y " + sexoBaja);
+        alert ("El promedio de notas es : " + promNotas + "\n La nota mas baja es y el sexo es : " + notaBaja + " y " + sexoBaja);
         alert ("La cantidad de notas mayores a 6 de varones son :" + notaAlta );
 }
