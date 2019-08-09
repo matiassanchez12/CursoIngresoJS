@@ -1,9 +1,26 @@
 function mostrar()
 {
-    var num1, num2;
+    var dia;
+    
+    dia = prompt ("Ingrese un dia de la semana: ");
 
-     prompt("ingrese un numero : ");
+    switch (dia)
+    {
+        case "lunes":
+        case "martes":
+        case "miercoles":
+        case "jueves":
+        case "viernes":
+            alert ("a trabajar");
+        break;
+        
+        case "sabado":
+        case "domingo":
+            alert ("buen finde.");
+        break;
 
-    num2 = prompt ("ingrese otro numero : ");
-
+        default: 
+            alert ("No es un dia valido.");
+        break;
+    }
 }
